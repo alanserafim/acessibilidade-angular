@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'design-de-componentes';
   // public yesNoAnswer: string = 'no';
   public form: FormGroup;
+  public test: string = '';
 
   constructor(formBuilder: FormBuilder){
     this.form = formBuilder.group({

@@ -1,6 +1,8 @@
 import { Component, EventEmitter, forwardRef, Input, Output } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
+import { UniqueIdService } from './../services/unique-id/unique-id.service';
+
 enum YesNoButtonGroupOptions {
   YES = 'yes',
   NO = 'no',
@@ -22,11 +24,17 @@ export class YesNoButtonGroupComponent implements ControlValueAccessor {
   @Input() public value: string = '';
   @Output() public valueChange = new EventEmitter<string>();
   @Input() public label: string = '';
+
+  public id: string = '';
   public options = YesNoButtonGroupOptions;
   public onChange = (value: string) => {};
   public onTouched = () => {};
 
-  constructor() {}
+  constructor(
+    uniqueIdService: UniqueIdService
+  ) {
+    this.id = uniqueIdService.generateUniqueIdWithPrefix("yes-no-button-group");
+  }
 
   public activate(value: string): void {
     this.writeValue(value);

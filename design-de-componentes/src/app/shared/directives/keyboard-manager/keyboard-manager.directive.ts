@@ -10,7 +10,6 @@ enum ArrrowDirection {
   selector: '[appKm]'
 })
 export class KeyboardManagerDirective {
-  //public arrowDirection = ArrrowDirection;
 
   // @ts-ignore
   @ContentChildren(KeyboardManagedItemDirective) public items: QueryList<KeyboardManagedItemDirective>;

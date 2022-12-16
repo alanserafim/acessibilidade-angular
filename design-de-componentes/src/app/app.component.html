@@ -1,11 +1,26 @@
 <main>
   <h1 tabindex="0">Form</h1>
   <form [formGroup]="form" (ngSubmit)="submit()">
+    <h2>Ex: 1 - Making the component acessible</h2>
     <app-yes-no-button-group
+      [appDisableControl]="false"
       formControlName="yesNoAnswer"
       label="Are you good enough in Angular?"
     >
     </app-yes-no-button-group>
+    <button>Submit</button>
+  </form>
+  <br>
+  <br>
+  <form [formGroup]="form2" (ngSubmit)="submit()">
+    <h2>Ex: 2: HTML Semantic Elements</h2>
+    <app-yes-no-semantico
+      [appDisableControl]="false"
+      formControlName="yesNoAnswer"
+      label="Are you good enough in Angular?"
+    >
+
+    </app-yes-no-semantico>
     <button>Submit</button>
   </form>
 </main>

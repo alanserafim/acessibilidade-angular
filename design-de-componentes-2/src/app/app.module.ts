@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExamplesModule } from './examples/examples.module';
 import { ModalModule } from './shared/components/modal/modal.module';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ModalModule } from './shared/components/modal/modal.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ModalModule
+    ModalModule,
+    ExamplesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

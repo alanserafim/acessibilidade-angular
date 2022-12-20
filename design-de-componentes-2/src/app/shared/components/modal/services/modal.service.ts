@@ -1,4 +1,5 @@
 import { Injectable, TemplateRef } from '@angular/core';
+import { ModalConfig } from '../interfaces/modal-config';
 
 @Injectable({
   providedIn: 'root'
@@ -19,12 +20,6 @@ export class ModalService {
 
 }
 
-
-//interfaces
-export interface ModalConfig {
-  templateRef: TemplateRef<any>;
-  title: string;
-}
 
 
 //Classes

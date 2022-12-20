@@ -1,0 +1,18 @@
+<h1>NG TEMPLATE</h1>
+
+<p>Example of ng template</p>
+
+<button
+  class="button button-primary"
+  type="button"
+  (click)="show()">Show hidden template</button>
+
+  <ng-template #template1>
+    <p>I am template 1</p>
+  </ng-template>
+
+  <ng-template #template2>
+    <p>I am template 2</p>
+  </ng-template>
+
+  <ng-content *ngTemplateOutlet="selectedTemplate"></ng-content>

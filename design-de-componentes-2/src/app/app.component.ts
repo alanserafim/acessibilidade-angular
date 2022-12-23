@@ -26,6 +26,5 @@ export class AppComponent {
       templateRef: this.modalTemplateRef,
       title: 'User Details'
     });
-
   }
 }

@@ -14,6 +14,8 @@ export class AppComponent {
   public firstName= 'Alan';
   // @ts-ignore
   public modalRef: ModalRef;
+  public info = false;
+
 
   //Construtor
   constructor(

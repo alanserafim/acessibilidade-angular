@@ -1,3 +1,4 @@
+import { ModalRef } from './../models/modal-ref';
 import { Component, HostBinding } from '@angular/core';
 import { fade } from 'src/app/shared/animations/fade';
 
@@ -14,4 +15,6 @@ export class ModalComponent {
   @HostBinding('@fade') fade = true;
   // @ts-ignore
  public config: ModalConfig;
+ // @ts-ignore
+ public modalRef: ModalRef
 }

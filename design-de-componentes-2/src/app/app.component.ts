@@ -12,7 +12,7 @@ export class AppComponent {
   // @ts-ignore
   @ViewChild('modal') public modalTemplateRef: TemplateRef<any>;
   title = 'design-de-componentes-2';
-  public firstName= 'Alan';
+  public firstName = 'Alan';
   // @ts-ignore
   public modalRef: ModalRef;
   public info = false;

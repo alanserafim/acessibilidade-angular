@@ -1,3 +1,4 @@
+import { FocusBackModule } from './../../directives/focus-back/focus-back.module';
 import { FocustrapModule } from './../../directives/focustrap/focustrap.module';
 import { ModalService } from './services/modal.service';
 import { NgModule } from '@angular/core';
@@ -12,7 +13,8 @@ import { ModalComponent } from './modal/modal.component';
   ],
   imports: [
     CommonModule,
-    FocustrapModule
+    FocustrapModule,
+    FocusBackModule
   ],
   exports: [
     ModalComponent
